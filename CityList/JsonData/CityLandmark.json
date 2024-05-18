@@ -1,0 +1,56 @@
+[
+  {
+    "cityId": 1,
+    "name": "Delhi",
+    "landmarks": [
+      {
+        "landmarkId": 15,
+        "name": "India Gate",
+        "photo":"IndiaGate",
+        "description":" India Gate is situated at the eastern end of Rajpath, near the National Stadium, in the heart of New Delhi. The monument is inspired by the Arc de Triomphe in Paris and serves as a war memorial."
+      },
+      {
+        "landmarkId": 22,
+        "name": "Lotus Temple",
+        "photo":"Lotus-Temple",
+        "description":"The Lotus Temple, located in Delhi, India, is an architectural marvel and a significant symbol of the Bahá'í Faith. It is renowned for its unique design and serene ambiance. "
+      }
+    ]
+  },
+  {
+    "cityId": 2,
+    "name": "Gujarat",
+    "landmarks": [
+      {
+        "landmarkId": 30,
+        "name": "Statue of Unity",
+        "photo":"statue_of_unity",
+        "description":"The Statue of Unity is a colossal statue of Indian statesman and independence activist Sardar Vallabhbhai Patel, located in the Indian state of Gujarat."
+      },
+      {
+        "landmarkId": 222,
+        "name": "Laxmi Vilas Palace",
+        "photo":"laxmi-vilas-palace",
+        "description":"Laxmi Vilas Palace is a grand and opulent palace located in Vadodara (formerly Baroda), in the Indian state of Gujarat. It is one of the most magnificent royal residences in India and showcases a blend of architectural styles."
+      }
+    ]
+  },
+  {
+    "cityId": 3,
+    "name": "Uttar Pradesh",
+    "landmarks": [
+      {
+        "landmarkId": 30,
+        "name": "Taj Mahal",
+        "photo":"TajMahal",
+        "description":"The Taj Mahal, located in Agra, India, is one of the most iconic and beautiful structures in the world. It is renowned for its stunning architecture, intricate details, and historical significance."
+      },
+      {
+        "landmarkId": 222,
+        "name": "Varanas Ghat",
+        "photo":"varanasi-up",
+        "description":"Varanasi, one of the oldest continuously inhabited cities in the world, is renowned for its ghats, which are series of steps leading down to the Ganges River. These ghats hold significant cultural, spiritual, and historical importance."
+      }
+    ]
+  }
+]

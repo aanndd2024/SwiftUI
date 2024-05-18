@@ -8,6 +8,7 @@
 import Foundation
 
 struct City: Codable {
+    //let id = UUID()
     var cityID: Int?
     var name: String?
     var landmarks: [Landmark]?
@@ -28,4 +29,3 @@ struct Landmark: Codable {
         case name, photo, description
     }
 }
- 

@@ -8,11 +8,22 @@
 import SwiftUI
 
 struct LandMarkRow: View {
+    var landmark:Landmark
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Image(landmark.photo!)
+                .resizable()
+                //.scaledToFit()
+                .frame(width: 120, height: 100, alignment: .center)
+            VStack(alignment:.leading ) {
+                Text(landmark.name!).font(.title2)
+                    .padding(.bottom,5)
+                Text(landmark.description!).lineLimit(4).font(.subheadline)
+            }.padding(.leading,5)
+        }
     }
 }
 
 #Preview {
-    LandMarkRow()
+    LandMarkRow(landmark: Landmark(landmarkID: 123, name: "Taj Mahal", photo: "TajMahal", description: "The Taj Mahal, located in Agra, India, is one of the most iconic and beautiful structures in the world. It is renowned for its stunning architecture, intricate details, and historical significance."))
 }
