@@ -13,7 +13,7 @@ struct LandMarkRow: View {
         HStack {
             Image(landmark.photo!)
                 .resizable()
-                //.scaledToFit()
+                .scaledToFit()
                 .frame(width: 120, height: 100, alignment: .center)
             VStack(alignment:.leading ) {
                 Text(landmark.name!).font(.title2)
