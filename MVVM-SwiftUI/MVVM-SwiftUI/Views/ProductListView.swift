@@ -14,9 +14,14 @@ struct ProductListView: View {
     var body: some View {
         NavigationStack {
             List(viewModel.products) { product in
-                ProductCellView(product: product)
-            }.navigationTitle("Product")
-                .listStyle(.plain)
+                NavigationLink{
+                    ProductDetailsView(product: product)
+                } label: {
+                    ProductCellView(product: product)
+                }
+            }
+            .navigationTitle("Products")
+            .listStyle(.plain)
         }.task {
             await viewModel.fetchProducts()
         }

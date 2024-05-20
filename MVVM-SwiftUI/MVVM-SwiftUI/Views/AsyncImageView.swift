@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct AsyncImageView: View {
+    let imageURL: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if let url = URL(string: imageURL) {
+            AsyncImage(url: url) { img in
+                img.resizable()
+            } placeholder: {
+                ProgressView()
+            }
+        }
     }
 }
 
 #Preview {
-    AsyncImageView()
+    AsyncImageView(imageURL: Product.dummy.image)
 }

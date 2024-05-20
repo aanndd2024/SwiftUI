@@ -19,6 +19,8 @@
 		9D62DE082BFA40ED0083CEDB /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D62DE072BFA40ED0083CEDB /* APIManager.swift */; };
 		9D62DE0B2BFA41400083CEDB /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D62DE0A2BFA41400083CEDB /* Double+Extension.swift */; };
 		9D62DE0E2BFA58100083CEDB /* ProductCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D62DE0D2BFA58100083CEDB /* ProductCellView.swift */; };
+		9D62DE122BFB32980083CEDB /* ProductDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D62DE112BFB32980083CEDB /* ProductDetailsView.swift */; };
+		9D62DE142BFB32DB0083CEDB /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D62DE132BFB32DB0083CEDB /* AsyncImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		9D62DE072BFA40ED0083CEDB /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		9D62DE0A2BFA41400083CEDB /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		9D62DE0D2BFA58100083CEDB /* ProductCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellView.swift; sourceTree = "<group>"; };
+		9D62DE112BFB32980083CEDB /* ProductDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsView.swift; sourceTree = "<group>"; };
+		9D62DE132BFB32DB0083CEDB /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +110,6 @@
 			children = (
 				9D62DE092BFA41250083CEDB /* Extension */,
 				9D62DE022BFA14730083CEDB /* APIManager */,
-				9D62DE012BFA14640083CEDB /* Utility */,
 				9D62DE002BFA144F0083CEDB /* Model */,
 				9D62DDFE2BFA143D0083CEDB /* ViewModel */,
 				9D62DDFF2BFA14480083CEDB /* Views */,
@@ -154,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				9D62DDD62BF9574F0083CEDB /* ProductListView.swift */,
+				9D62DE112BFB32980083CEDB /* ProductDetailsView.swift */,
+				9D62DE132BFB32DB0083CEDB /* AsyncImageView.swift */,
 				9D62DE0C2BFA57F10083CEDB /* ProductCellView */,
 			);
 			path = Views;
@@ -165,13 +170,6 @@
 				9D62DE052BFA14A20083CEDB /* Product.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		9D62DE012BFA14640083CEDB /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utility;
 			sourceTree = "<group>";
 		};
 		9D62DE022BFA14730083CEDB /* APIManager */ = {
@@ -333,6 +331,8 @@
 				9D62DE062BFA14A20083CEDB /* Product.swift in Sources */,
 				9D62DE0B2BFA41400083CEDB /* Double+Extension.swift in Sources */,
 				9D62DE082BFA40ED0083CEDB /* APIManager.swift in Sources */,
+				9D62DE142BFB32DB0083CEDB /* AsyncImageView.swift in Sources */,
+				9D62DE122BFB32980083CEDB /* ProductDetailsView.swift in Sources */,
 				9D62DE042BFA14900083CEDB /* ProductViewModel.swift in Sources */,
 				9D62DDD52BF9574F0083CEDB /* MVVM_SwiftUIApp.swift in Sources */,
 			);
