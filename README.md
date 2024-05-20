@@ -4,6 +4,8 @@ MyTask
 > Create task
 > Update task
 > Delete task
+<img width="347" height="400" alt="Product List" src="https://github.com/aanndd2024/SwiftUI/assets/160536474/6e7f3afb-ac52-4e06-8ec8-707df69663fb">
+
 
 
 CityList
@@ -14,4 +16,4 @@ CityList
 ProductList
 > List product
 > Show product details
-![Simulator Screenshot - iPhone 15 Pro - 2024-05-20 at 17 07 36](https://github.com/aanndd2024/SwiftUI/assets/160536474/74c3f9b7-f61d-4e59-8b26-feb27540db62)
+
