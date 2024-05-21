@@ -12,6 +12,7 @@ CityList
 > Show Landmark details
 <img width="347" height="700" alt="Product List" src="https://github.com/aanndd2024/SwiftUI/assets/160536474/ce467178-066f-4385-8349-c6939aa8e862">
 
+
 ProductList
 > List product
 > Show product details
