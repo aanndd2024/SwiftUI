@@ -6,7 +6,6 @@
 > Delete task
 <img width="347" height="700" alt="Product List" src="https://github.com/aanndd2024/SwiftUI/assets/160536474/f34574ae-04f3-415c-8a61-92d3efdaa6cd">
 --
-> 
 **CityList**
 > List top city
 > List landmark of city
