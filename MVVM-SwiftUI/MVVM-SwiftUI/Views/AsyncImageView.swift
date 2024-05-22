@@ -6,16 +6,24 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct AsyncImageView: View {
     let imageURL: String
     var body: some View {
+
         if let url = URL(string: imageURL) {
-            AsyncImage(url: url) { img in
-                img.resizable()
-            } placeholder: {
-                ProgressView()
-            }
+            KFImage(url)
+                .placeholder {
+                    ProgressView()
+                }
+                .resizable()
+                .scaledToFit()
+            //            AsyncImage(url: url) { img in
+            //                img.resizable()
+            //            } placeholder: {
+            //                ProgressView()
+            //            }
         }
     }
 }
