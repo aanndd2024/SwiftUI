@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SwiftUIFirebase/SwiftUIFirebase.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MVVM-SwiftUI/MVVM-SwiftUI.xcodeproj">
    </FileRef>
    <FileRef
@@ -9,5 +12,8 @@
    </FileRef>
    <FileRef
       location = "group:MyTask/MyTask.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:Weather/Weather.xcodeproj">
    </FileRef>
 </Workspace>
