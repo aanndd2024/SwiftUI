@@ -10,33 +10,35 @@ import SwiftUI
 struct LoginView: View {
     @State var username:String = ""
     @State var password:String = ""
-
+    //@StateObject private var viewModel = AuthViewModel()
+    @EnvironmentObject var viewModel: AuthViewModel
+    @EnvironmentObject var router: Router
+    
     var body: some View {
-        NavigationStack {
-            ScrollView {
-                VStack(spacing: 10) {
-                    logo
-                    Spacer().frame(height: 12)
-                    title
-                    Spacer().frame(height: 10)
-                    
-                    InputView(placeholderText: "Email or Mobile Number", text: $username)
-                    Spacer().frame(height: 10)
-                    
-                    InputView(placeholderText: "Password", text: $password, isSecureField: true)
-                    
-                    forgotPasswordButton
-                    Spacer().frame(height: 10)
-                    
-                    loginButton
-                    
-                    bottomView
-                }
+        ScrollView {
+            VStack(spacing: 10) {
+                logo
+                Spacer().frame(height: 12)
+                title
+                Spacer().frame(height: 10)
+                
+                InputView(placeholderText: "Email or Mobile Number", text: $username)
+                Spacer().frame(height: 10)
+                
+                InputView(placeholderText: "Password", text: $password, isSecureField: true)
+                
+                forgotPasswordButton
+                Spacer().frame(height: 10)
+                
+                loginButton
+                
+                bottomView
             }
-            .ignoresSafeArea()
-            .padding(.horizontal)
-            .padding(.vertical, 8)
         }
+        .ignoresSafeArea()
+        .padding(.horizontal)
+        .padding(.vertical, 8)
+        .alert(viewModel.errorMessage, isPresented: $viewModel.isError){}
     }
     private var logo: some View {
         Image(.login)
@@ -54,7 +56,7 @@ struct LoginView: View {
         HStack {
             Spacer()
             Button {
-                
+                router.navigate(to: .forgotPassword)
             } label: {
                 Text("Forgot Password")
                     .foregroundStyle(.gray)
@@ -64,7 +66,9 @@ struct LoginView: View {
     
     private var loginButton: some View {
         Button {
-            
+            Task {
+                await viewModel.login(email: username, password: password)
+            }
         } label: {
             Text("Login")
         }.buttonStyle(CapsuleButtonStyle(bgColor: .teal, textColor: .white, hasBorder: false))
@@ -105,8 +109,8 @@ struct LoginView: View {
     }
     
     private var signUpButton: some View {
-        NavigationLink {
-            CreateAccountView()
+        Button {
+            router.navigate(to: .createAccount)
         } label: {
             HStack {
                 Text("Don't have an account?").foregroundStyle(.black)

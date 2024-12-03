@@ -11,10 +11,14 @@ struct CreateAccountView:View {
     @State private var fullName:String = ""
     @State private var password:String = ""
     @State private var confirmPassword:String = ""
-    @StateObject private var viewModel = AuthViewModel()
-    
+    @EnvironmentObject var viewModel: AuthViewModel
+    @EnvironmentObject var router: Router
+
     var body: some View {
         VStack(spacing: 16) {
+            if viewModel.isLoading {
+                ProgressView("Creating User Account...")
+            }
             Text("Please complete all information to create an account")
                 .fontWeight(.medium)
                 .multilineTextAlignment(.center)
@@ -33,9 +37,7 @@ struct CreateAccountView:View {
                         .foregroundStyle(isValidPassword ? .green : .red)
                 }
             }
-
             Spacer()
-
             createAccountButton
         }
         .padding()
@@ -51,6 +53,7 @@ struct CreateAccountView:View {
         Button {
             Task {
                 await viewModel.createUser(email: email, fullName: fullName, password: password)
+                router.navigateBack()
             }
         } label: {
             Text("Create Account")

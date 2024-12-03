@@ -19,9 +19,24 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct SwiftUIFirebaseApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject private var authViewModel = AuthViewModel()
+    @ObservedObject private var router = Router()
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            NavigationStack(path: $router.navPath) {
+                AppView()
+                    .navigationDestination(for: Router.AuthFlow.self) { destination in
+                        switch destination {
+                        case .createAccount: CreateAccountView()
+                        case .login: LoginView()
+                        case .forgotPassword: ForgotPasswordView()
+                        case .emailSent: EmailSentView()
+                        case .profile: ProfileView()
+                        }
+                    }
+            }
+            .environmentObject(router)
+            .environmentObject(authViewModel)
         }
     }
 }
