@@ -1,0 +1,224 @@
+[
+    {
+        "id": "0",
+        "name": "Piña colada",
+        "type": "alcoholic",
+        "shortDescription": "Velvety-smooth texture and a taste of the tropics are what this tropical drink delivers.",
+        "longDescription": "The Piña Colada is a Puerto Rican rum drink made with pineapple juice (the name means “strained pineapple” in Spanish) and cream of coconut. By most accounts, the modern-day Piña Colada seems to have originated from a 1954 version that bartender named Ramón “Monchito” Marrero Perez shook up at The Caribe Hilton hotel in San Juan, Puerto Rico. While you may not be sipping this icy-cold tiki drink on the beaches of Puerto Rico, it’s sure to get you in a sunny mood no matter the season.",
+        "preparationMinutes": 7,
+        "imageName": "pinacolada",
+        "ingredients" : [
+            "4 oz rum",
+            "3 oz fresh pineapple juice, chilled (or use frozen pineapple chunks for a smoothie-like texture)",
+            "2 oz cream of coconut (or use a combination of sweetened coconut cream and coconut milk)",
+            "1 ounce freshly squeezed lime juice (optional)",
+            "2 cups ice",
+            "Fresh pineapple, for garnish"
+        ]
+    },
+    {
+        "id": "1",
+        "name": "Mojito",
+        "type": "alcoholic",
+        "shortDescription": "A refreshing Cuban classic made with white rum and muddled fresh mint.",
+        "longDescription": "This is an authentic recipe for mojito. I sized the recipe for one serving, but you can adjust it accordingly and make a pitcher full. It's a very refreshing drink for hot summer days. Be careful when drinking it, however. If you make a pitcher you might be tempted to drink the whole thing yourself, and you just might find yourself talking Spanish in no time! Tonic water can be substituted instead of the soda water but the taste is different and somewhat bitter.",
+        "preparationMinutes": 10,
+        "imageName": "mojito",
+        "ingredients" : [
+            "10 fresh mint leaves",
+            "½ lime, cut into 4 wedges",
+            "2 tablespoons white sugar, or to taste",
+            "1 cup ice cubes",
+            "1 ½ fluid ounces white rum",
+            "½ cup club soda"
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Daiquiri",
+        "type": "alcoholic",
+        "shortDescription": "An easy rum and lime-juice cocktail shaken over lots of ice, like an island margarita.",
+        "longDescription": "The original daiquiri is an extremely simple recipe that requires just three common ingredients. It is also one of the freshest drinks you can make and an essential rum cocktail everyone should know and taste. \r\nFor the best daiquiri, use quality ingredients, including premium rum, fresh lime juice, and homemade simple syrup. A well-made daiquiri should have a nice balance of sweet and sour and can be adjusted to your personal taste. Once you find your ideal mix, you will become a believer that those sugary-tart bottled daiquiris have no place in the bar.",
+        "preparationMinutes": 5,
+        "imageName": "daiquiri",
+        "ingredients" : [
+            "1 ½ fluid ounces light rum",
+            "1 fluid ounce lime juice",
+            "1 teaspoon simple syrup",
+            "1 cup ice"
+        ]
+    },
+    {
+        "id": "3",
+        "name": "Manhattan",
+        "type": "alcoholic",
+        "shortDescription": "A classic cocktail made with whiskey, sweet vermouth, and bitters.",
+        "longDescription": "While rye is the traditional whiskey of choice, other commonly used whiskies include Canadian whisky, bourbon, blended whiskey, and Tennessee whiskey. The cocktail is usually stirred then strained into a cocktail glass and garnished traditionally with a maraschino cherry. A Manhattan may also be served on the rocks in a lowball glass.",
+        "preparationMinutes": 5,
+        "imageName": "manhattan",
+        "ingredients" : [
+            "2 fluid ounces rye whiskey",
+            "½ fluid ounce sweet vermouth",
+            "1 dash Angostura bitters",
+            "1 cup ice cubes",
+            "1 maraschino cherry"
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Virgin Mixed Berry Caipirinha",
+        "type": "non-alcoholic",
+        "shortDescription": "The Brazilian caipirinha is a cocktail that’s hard to resist, but this virgin version might just be the perfect thing for you to drink.",
+        "longDescription": "A non-alcohol mixed berry Caipirinha is a wonderful mixture of fresh and juicy mixed berries like raspberry, strawberry and blueberry, muddled with lime and mint, bubbling with sweetness. It makes you feel light and refreshes on warm days and it’s dead easy to prepare.",
+        "preparationMinutes": 8,
+        "imageName": "virginBerryCaipirinha",
+        "ingredients" : [
+            "300 g fresh mixed berries",
+            "4 Lime cut and halved",
+            "4 tbsp. mint leaves roughly torn",
+            "8 tbsp. light brown soft sugar",
+            "600 ml cream soda",
+            "crushed ice"
+        ]
+    },
+    {
+        "id": "5",
+        "name": "Basil Lemonade Punch",
+        "type": "non-alcoholic",
+        "shortDescription": "Dress up your lemonade with this elegant take on a classic.",
+        "longDescription": "Bright fresh basil is muddled with sugar, then topped with lemonade and sparkly seltzer water for a bright non-alcoholic cocktail you can make in minutes. I don’t have to convince you that lemonade is a brilliant option for a party libation, but I do want to heavily suggest you try it with this extra-fresh twist.",
+        "preparationMinutes": 6,
+        "imageName": "basilLemonadePunch",
+        "ingredients" : [
+            "1 cup fresh basil leaves, loosely packed and coarsely chopped",
+            "¼ cup sugar",
+            "3 cups prepared lemonade",
+            "3 cups seltzer water",
+            "1 lemon, sliced",
+            "crushed ice"
+        ]
+    },
+    {
+        "id": "6",
+        "name": "Gin and tonic",
+        "type": "alcoholic",
+        "shortDescription": "The good 'ol G&T is a dead-simple summer drink, and another good reason to stay stocked up on fresh limes.",
+        "longDescription": "A gin and tonic or, less frequently, gin tonic, is a highball cocktail made with gin and tonic water poured over a large amount of ice. The ratio of gin to tonic varies according to taste, strength of the gin, other drink mixers being added, etc., with most recipes calling for a ratio between 1:1 and 1:3.",
+        "preparationMinutes": 3,
+        "imageName": "ginAndTonic",
+        "ingredients" : [
+            "4 cubes ice",
+            "2 fluid ounces gin",
+            "4 fluid ounces tonic water",
+            "1 tablespoon fresh lime juice",
+            "1 lime wedge"
+        ]
+    },
+    {
+        "id": "7",
+        "name": "Margarita",
+        "type": "alcoholic",
+        "shortDescription": "A sweet tequila-based party drink that's easy to make in batches.",
+        "longDescription": "A margarita is a cocktail consisting of tequila, orange liqueur, and lime juice often served with salt on the rim of the glass. The drink is served shaken with ice, blended with ice, or without ice.",
+        "preparationMinutes": 5,
+        "imageName": "margarita",
+        "ingredients" : [
+            "1 (6 ounce) can frozen limeade concentrate",
+            "6 fluid ounces tequila",
+            "2 fluid ounces triple sec"
+        ]
+    },
+    {
+        "id": "8",
+        "name": "Bloody Mary",
+        "type": "alcoholic",
+        "shortDescription": "This lively eye-opener adds a spicy kick to brunch.",
+        "longDescription": "In a cocktail mixer full of ice, combine the vodka, vegetable juice, Worcestershire sauce, hot pepper sauce, salt and pepper. Shake vigorously and strain into the glass. Garnish with a stalk of celery and olives stuck onto a toothpick.",
+        "preparationMinutes": 5,
+        "imageName": "bloodyMarry",
+        "ingredients" : [
+            "1 ½ cups ice cubes",
+            "4 fluid ounces tomato juice",
+            "1 ½ fluid ounces vodka",
+            "¼ fluid ounce fresh lemon juice",
+            "4 dashes hot pepper sauce (such as Tabasco®)",
+            "2 dashes Worcestershire sauce",
+            "1 pinch salt and ground black pepper",
+            "1 pinch salt and ground black pepper",
+            "1 stalk celery, for garnish"
+        ]
+    },
+    {
+        "id": "9",
+        "name": "Screwdriver",
+        "type": "alcoholic",
+        "shortDescription": "This lively eye-opener adds a spicy kick to brunch.",
+        "longDescription": "Screwdriver drink is the easiest cocktail recipe that you can make at home with only three ingredients: orange, vodka and ice.",
+        "preparationMinutes": 1,
+        "imageName": "screwdriver",
+        "ingredients" : [
+            "1 (1.5 fluid ounce) jigger good quality vodka",
+            "6 fluid ounces pulp-free pure premium orange juice",
+            "ice cubes"
+        ]
+    },
+    {
+        "id": "10",
+        "name": "Old Fashioned",
+        "type": "alcoholic",
+        "shortDescription": "The original. A sophisticated cocktail that's simple to make and goes down smooth.",
+        "longDescription": "The original version of this cocktail was simply water, sugar, bitters, and whatever booze was within reach, often brandy. With time, the water became ice, the booze became whiskey, and the drink became an old fashioned. Serve over ice in a short tumbler (also known as an Old Fashioned glass), garnished with maraschino cherries.",
+        "preparationMinutes": 5,
+        "imageName": "oldFashioned",
+        "ingredients" : [
+            "1 sugar cube",
+            "1 teaspoon water",
+            "1 dash bitters",
+            "2 fluid ounces whiskey (rye or bourbon)",
+            "1 lemon twist",
+            "ice cubes",
+            "1 orange slice, for garnish",
+            "1 maraschino cherry, for garnish"
+        ]
+    },
+    {
+        "id": "11",
+        "name": "Margarita Mocktail",
+        "type": "non-alcoholic",
+        "shortDescription": "This delicious gourmet margarita is actually a mocktail. No liquor at all.",
+        "longDescription": "This delicious non-alcoholic cocktail comes with all the flavors you’ve come to expect (lime, orange, and a salted rim), a few new surprises (grapefruit and almond) and one notable omission: tequila.",
+        "preparationMinutes": 5,
+        "imageName": "margaritaMocktail",
+        "ingredients" : [
+            "2 oz. honey or agave",
+            "1 oz. limeade concentrate",
+            "1 oz. fresh lime juice",
+            "½ oz. grapefruit juice",
+            "¼ teaspoon orange extract or orange bitters",
+            "¾ cup ice",
+            "1 tablespoon flake salt",
+            "½ teaspoon chili powder",
+            "limes for garnish"
+        ]
+    },
+    {
+        "id": "12",
+        "name": "Non-Alcoholic Juicy Julep",
+        "type": "non-alcoholic",
+        "shortDescription": "Pineapple, orange and lime juices come together in this non-alcoholic version of a favorite cocktail.",
+        "longDescription": "Here is a beverage all can enjoy, both kids and adults – a non-alcoholic version of the ever-popular mint julep. If you’re not drinking, then you might want to try this virgin Juicy Julep. Pineapple, orange and lime juices come together in this non-alcoholic cocktail. It’s a delectable drink… That’s made even more special with the slice of pineapple on the edge. Yum!",
+        "preparationMinutes": 6,
+        "imageName": "nonAlcoholicJuicyJulep",
+        "ingredients" : [
+            "1 measure pineapple juice",
+            "1 measure orange juice",
+            "1 measure freshly squeeze lime juice",
+            "ginger ale, to top off",
+            "1 teaspoon mint , crushed or finely chopped",
+            "sprig of mint , for garnish",
+            "lime wedge and/or pineapple slice , for garnish",
+            "ice"
+        ]
+    }
+]
+
