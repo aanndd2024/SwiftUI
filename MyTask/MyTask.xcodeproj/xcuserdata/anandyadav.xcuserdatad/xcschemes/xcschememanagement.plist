@@ -6,8 +6,28 @@
 	<dict>
 		<key>MyTask.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>9DFD184F2BE9064400563BF3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9DFD185F2BE9064800563BF3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9DFD18692BE9064800563BF3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

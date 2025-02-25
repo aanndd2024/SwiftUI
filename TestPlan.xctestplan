@@ -1,0 +1,52 @@
+{
+  "configurations" : [
+    {
+      "id" : "BBF7E6B6-143C-44DD-809B-82263F82861A",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:CocktailBook.xcodeproj",
+        "identifier" : "9D8D440A2D61174C000AE55B",
+        "name" : "CocktailBookTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/Weather\/Weather.xcodeproj",
+        "identifier" : "9D9DE31A2CC97FF40024318F",
+        "name" : "WeatherTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/SwiftUIFirebase\/SwiftUIFirebase.xcodeproj",
+        "identifier" : "9D792E2B2CC43539000F8587",
+        "name" : "SwiftUIFirebaseTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/CityList\/CityList.xcodeproj",
+        "identifier" : "9D62DD962BF646470083CEDB",
+        "name" : "CityListTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/MyTask\/MyTask.xcodeproj",
+        "identifier" : "9DFD185F2BE9064800563BF3",
+        "name" : "MyTaskTests"
+      }
+    }
+  ],
+  "version" : 1
+}

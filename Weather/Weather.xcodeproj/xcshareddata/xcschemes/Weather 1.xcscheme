@@ -6,34 +6,29 @@
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES"
       buildArchitectures = "Automatic">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9D9DE30A2CC97FF10024318F"
+               BuildableName = "Weather.app"
+               BlueprintName = "Weather"
+               ReferencedContainer = "container:Weather.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
-      <TestPlans>
-         <TestPlanReference
-            reference = "container:CocktailBookTests.xctestplan"
-            default = "YES">
-         </TestPlanReference>
-         <TestPlanReference
-            reference = "container:TestPlan.xctestplan">
-         </TestPlanReference>
-      </TestPlans>
-      <Testables>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9D8D440A2D61174C000AE55B"
-               BuildableName = "CocktailBookTests.xctest"
-               BlueprintName = "CocktailBookTests"
-               ReferencedContainer = "container:CocktailBook.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-      </Testables>
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      shouldAutocreateTestPlan = "YES">
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -49,10 +44,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9D8D43862D5E1911000AE55B"
-            BuildableName = "CocktailBook.app"
-            BlueprintName = "CocktailBook"
-            ReferencedContainer = "container:CocktailBook.xcodeproj">
+            BlueprintIdentifier = "9D9DE30A2CC97FF10024318F"
+            BuildableName = "Weather.app"
+            BlueprintName = "Weather"
+            ReferencedContainer = "container:Weather.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,6 +57,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "9D9DE30A2CC97FF10024318F"
+            BuildableName = "Weather.app"
+            BlueprintName = "Weather"
+            ReferencedContainer = "container:Weather.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

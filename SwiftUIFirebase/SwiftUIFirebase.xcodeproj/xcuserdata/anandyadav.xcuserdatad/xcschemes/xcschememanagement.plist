@@ -4,10 +4,37 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>SwiftUIFirebase 1.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>SwiftUIFirebase.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>9D792E1B2CC43534000F8587</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9D792E2B2CC43539000F8587</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9D792E352CC43539000F8587</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

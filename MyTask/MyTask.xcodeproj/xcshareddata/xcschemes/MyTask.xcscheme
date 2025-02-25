@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9D8D43862D5E1911000AE55B"
-               BuildableName = "CocktailBook.app"
-               BlueprintName = "CocktailBook"
-               ReferencedContainer = "container:CocktailBook.xcodeproj">
+               BlueprintIdentifier = "9DFD184F2BE9064400563BF3"
+               BuildableName = "MyTask.app"
+               BlueprintName = "MyTask"
+               ReferencedContainer = "container:MyTask.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -27,40 +27,29 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
-      <TestPlans>
-         <TestPlanReference
-            reference = "container:CocktailBook.xctestplan">
-         </TestPlanReference>
-         <TestPlanReference
-            reference = "container:../TestPlan.xctestplan"
-            default = "YES">
-         </TestPlanReference>
-         <TestPlanReference
-            reference = "container:../TestPlan.xctestplan">
-         </TestPlanReference>
-      </TestPlans>
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      shouldAutocreateTestPlan = "YES">
       <Testables>
          <TestableReference
             skipped = "NO"
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9D8D440A2D61174C000AE55B"
-               BuildableName = "CocktailBookTests.xctest"
-               BlueprintName = "CocktailBookTests"
-               ReferencedContainer = "container:CocktailBook.xcodeproj">
+               BlueprintIdentifier = "9DFD185F2BE9064800563BF3"
+               BuildableName = "MyTaskTests.xctest"
+               BlueprintName = "MyTaskTests"
+               ReferencedContainer = "container:MyTask.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
-            skipped = "YES"
+            skipped = "NO"
             parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9D8D43A02D5E1914000AE55B"
-               BuildableName = "CocktailBookUITests.xctest"
-               BlueprintName = "CocktailBookUITests"
-               ReferencedContainer = "container:CocktailBook.xcodeproj">
+               BlueprintIdentifier = "9DFD18692BE9064800563BF3"
+               BuildableName = "MyTaskUITests.xctest"
+               BlueprintName = "MyTaskUITests"
+               ReferencedContainer = "container:MyTask.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -79,10 +68,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9D8D43862D5E1911000AE55B"
-            BuildableName = "CocktailBook.app"
-            BlueprintName = "CocktailBook"
-            ReferencedContainer = "container:CocktailBook.xcodeproj">
+            BlueprintIdentifier = "9DFD184F2BE9064400563BF3"
+            BuildableName = "MyTask.app"
+            BlueprintName = "MyTask"
+            ReferencedContainer = "container:MyTask.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -96,10 +85,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9D8D43862D5E1911000AE55B"
-            BuildableName = "CocktailBook.app"
-            BlueprintName = "CocktailBook"
-            ReferencedContainer = "container:CocktailBook.xcodeproj">
+            BlueprintIdentifier = "9DFD184F2BE9064400563BF3"
+            BuildableName = "MyTask.app"
+            BlueprintName = "MyTask"
+            ReferencedContainer = "container:MyTask.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
