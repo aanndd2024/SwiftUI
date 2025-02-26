@@ -5,6 +5,9 @@
       location = "group:TestPlan.xctestplan">
    </FileRef>
    <FileRef
+      location = "group:ShoeShop/ShoeShop.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CocktailBook/CocktailBook.xcodeproj">
    </FileRef>
    <FileRef
