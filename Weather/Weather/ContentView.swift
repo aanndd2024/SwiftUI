@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var viewModel = WeatherViewModel(weatherService: WeatherService())
     @State var city: String = ""
+    @State var isLoading: Bool = false // Add a loading state
     
     var body: some View {
         VStack {
@@ -17,17 +18,29 @@ struct ContentView: View {
                 .padding()
                 .onSubmit {
                     Task {
-                        progressView()
+                        isLoading = true // Start loading
                         await viewModel.fetchCoordinateByCity(city: city)
                         await viewModel.fetchWeather(location: viewModel.location!)
+                        isLoading = false // Stop loading
                     }
                 }
-            Text("\(viewModel.weather?.temp)")
+            
+            if isLoading {
+                ProgressView() // Show loading indicator
+            } else {
+                if let temp = viewModel.weather?.temp {
+                    Text("\(temp)")
+                } else {
+                    Text("Enter a location to get weather data")
+                }
+            }
+            
             Spacer()
         }
         .padding()
     }
 }
+
 
 struct progressView: View {
     @State private var progress: Double = 0.0
