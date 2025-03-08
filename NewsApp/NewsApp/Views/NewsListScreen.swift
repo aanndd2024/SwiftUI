@@ -46,9 +46,20 @@ struct NewsListView: View {
                     }
                 }
             }
-            .navigationTitle("")
+            .navigationTitle("News Sources")
             .task {
                 await viewModel.fetchNewsSourceData()
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        Task {
+                            await viewModel.fetchNewsSourceData()
+                        }
+                    }) {
+                        Image(systemName: "arrow.clockwise.circle")
+                    }
+                }
             }
         }
     }

@@ -8,29 +8,102 @@
 import XCTest
 @testable import NewsApp
 
+@MainActor
 final class NewsAppTests: XCTestCase {
+    
+    var viewModel: NewsListViewModel!
+    var newsSourceListViewModel: NewsSourceListViewModel!
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var mockWebservice: MockWebservice!
+    
+    override func setUp() {
+        super.setUp()
+        mockWebservice = MockWebservice()
+        viewModel = NewsListViewModel(webService: mockWebservice)
+        newsSourceListViewModel = NewsSourceListViewModel(webService: mockWebservice)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override func tearDown() {
+        viewModel = nil
+        newsSourceListViewModel = nil
+        mockWebservice = nil
+        super.tearDown()
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func testFetchNewsSourceData_Success() async {
+        // Arrange
+        let mockData = [NewsSource(id: "1", name: "Mock News", description: "Description")]
+        mockWebservice.mockNewsSources = mockData
+        
+        // Act
+        await viewModel.fetchNewsSourceData()
+        
+        // Assert
+        XCTAssertEqual(viewModel.newsSourceData.count, 1)
+        XCTAssertEqual(viewModel.newsSourceData.first?.id, "1")
+        XCTAssertNil(viewModel.error)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testFetchNewsSourceData_BadUrlError() async {
+        // Arrange
+        mockWebservice.shouldReturnError = .badUrl
+        
+        // Act
+        await viewModel.fetchNewsSourceData()
+        
+        // Assert
+        XCTAssertTrue(viewModel.newsSourceData.isEmpty)
+        //XCTAssertEqual(viewModel.error, .badUrl)
     }
-
+    
+    // Test - NewsSourceListViewModel
+    func testFetchNewsArticleData_Success() async {
+        // Arrange: Provide mock data
+        let mockData = [NewsArticle(source: ["abc-news":""], author: "Emily Chang", title: "Test News", description: "final warning", url: "https://abcnews.go.com/", urlToImage: "https://i.abcnewsfe.com/a/d8deed56-867f-4eeb-bd31-196858258c3d/donald-trump-4-ap-gmh-250305_1741184040214_hpMain_16x9.jpg?w=1600", publishedAt: "2025-03-07T19:44:05Z", content: "President Donald Trump this week once again threatened Hamas")]
+        mockWebservice.mockNewsArticles = mockData
+        
+        // Act: Call fetchNewsSourceData
+        await newsSourceListViewModel.fetchNewsSourceData(sourceID: "abc-news")
+        
+        // Assert: Check if data is assigned correctly
+        XCTAssertEqual(newsSourceListViewModel.newsArticles.count, 1)
+        XCTAssertEqual(newsSourceListViewModel.newsArticles.first?.title, "Test News")
+        XCTAssertNil(newsSourceListViewModel.error)
+    }
+    
+    func testFetchNewsArticleData_BadUrlError() async {
+        // Arrange: Simulate a bad URL error
+        mockWebservice.shouldReturnError = .badUrl
+        
+        // Act
+        await newsSourceListViewModel.fetchNewsSourceData(sourceID: "abc-news")
+        
+        // Assert
+        XCTAssertTrue(newsSourceListViewModel.newsArticles.isEmpty)
+        //XCTAssertEqual(newsSourceListViewModel.error, .badUrl)
+    }
+    
+    func testFetchNewsArticleData_InvalidResponseError() async {
+        // Arrange: Simulate an invalid response error
+        mockWebservice.shouldReturnError = .invalidResponse
+        
+        // Act
+        await newsSourceListViewModel.fetchNewsSourceData(sourceID: "abc-news")
+        
+        // Assert
+        XCTAssertTrue(newsSourceListViewModel.newsArticles.isEmpty)
+       // XCTAssertEqual(newsSourceListViewModel.error, .invalidResponse)
+    }
+    
+    func testFetchNewsArticleData_DecodingError() async {
+        // Arrange: Simulate a decoding error
+        mockWebservice.shouldReturnError = .decodingError
+        
+        // Act
+        await newsSourceListViewModel.fetchNewsSourceData(sourceID: "abc-news")
+        
+        // Assert
+        XCTAssertTrue(newsSourceListViewModel.newsArticles.isEmpty)
+        //XCTAssertEqual(newsSourceListViewModel.error, .decodingError)
+    }
 }

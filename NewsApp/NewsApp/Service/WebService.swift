@@ -13,8 +13,12 @@ enum NetworkError: Error {
     case decodingError
     case networkError(Error)
 }
+protocol WebserviceProtocol {
+    func fetchSources(url: URL?) async -> Result<[NewsSource], NetworkError>
+    func fetchNewsByID(sourceID: String, url: URL?) async -> Result<NewsArticleResponse, NetworkError>
+}
 
-class Webservice {
+class Webservice:WebserviceProtocol {
     func fetchSources(url: URL?) async -> Result<[NewsSource], NetworkError> {
         guard let url = url else {
             return .failure(.badUrl)
@@ -48,18 +52,3 @@ class Webservice {
     }
 }
 
-
-
-//func fetchNewsAsync(sourceId: String, url: URL?) async throws -> [NewsArticle] {
-//    
-//    try await withCheckedThrowingContinuation { continuation in
-//        fetchNews(sourceId: sourceId, url: url) { result in
-//            switch result {
-//                case .success(let newsArticles):
-//                    continuation.resume(returning: newsArticles)
-//                case .failure(let error):
-//                    continuation.resume(throwing: error)
-//            }
-//        }
-//    }
-//}

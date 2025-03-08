@@ -13,9 +13,9 @@ class NewsSourceListViewModel: ObservableObject {
     @Published var error: NetworkError?
     @Published var isLoading: Bool = false
     
-    private let webService: Webservice
+    private let webService: WebserviceProtocol
     
-    init(webService: Webservice) {
+    init(webService: WebserviceProtocol) {
         self.webService = webService
     }
     
@@ -25,6 +25,7 @@ class NewsSourceListViewModel: ObservableObject {
         switch result {
         case .success(let newsArticles):
             self.newsArticles = newsArticles.articles
+            print(self.newsArticles)
         case .failure(let error):
             self.error = error
         }

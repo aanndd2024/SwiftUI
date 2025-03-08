@@ -13,18 +13,22 @@ class NewsListViewModel:ObservableObject {
     @Published var error: NetworkError?
     @Published var isLoading: Bool = false
     
-    private let webService: Webservice
+    private let webService: WebserviceProtocol
     
-    init(webService: Webservice) {
+    init(webService: WebserviceProtocol) {
         self.webService = webService
     }
     
     func fetchNewsSourceData() async {
         isLoading = true
+        newsSourceData = []  // Clears old data before fetching
+        
         let result = await webService.fetchSources(url: Constants.Urls.sources)
+        
         switch result {
-        case .success(let newsSourceData):
-            self.newsSourceData = newsSourceData
+        case .success(let newsSources):
+            self.newsSourceData = newsSources
+            print(newsSources)
         case .failure(let error):
             self.error = error
         }
