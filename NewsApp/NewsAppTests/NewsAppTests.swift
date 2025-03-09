@@ -59,7 +59,7 @@ final class NewsAppTests: XCTestCase {
     // Test - NewsSourceListViewModel
     func testFetchNewsArticleData_Success() async {
         // Arrange: Provide mock data
-        let mockData = [NewsArticle(source: ["abc-news":""], author: "Emily Chang", title: "Test News", description: "final warning", url: "https://abcnews.go.com/", urlToImage: "https://i.abcnewsfe.com/a/d8deed56-867f-4eeb-bd31-196858258c3d/donald-trump-4-ap-gmh-250305_1741184040214_hpMain_16x9.jpg?w=1600", publishedAt: "2025-03-07T19:44:05Z", content: "President Donald Trump this week once again threatened Hamas")]
+        let mockData = [NewsArticle(source: ["abc-news":"abc news"], author: "Emily Chang", title: "Test News", description: "final warning", url: "https://abcnews.go.com/", urlToImage: "https://i.abcnewsfe.com/", publishedAt: "2025-03-07T19:44:05Z", content: "President Donald Trump this week once again threatened Hamas")]
         mockWebservice.mockNewsArticles = mockData
         
         // Act: Call fetchNewsSourceData

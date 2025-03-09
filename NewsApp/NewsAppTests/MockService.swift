@@ -11,7 +11,6 @@ class MockWebservice: WebserviceProtocol {
     var shouldReturnError: NetworkError?
     var mockNewsSources: [NewsSource] = []
     var mockNewsArticles: [NewsArticle] = []
-
     
     func fetchNewsByID(sourceID: String, url: URL?) async -> Result<NewsArticleResponse, NetworkError> {
         if let error = shouldReturnError {
