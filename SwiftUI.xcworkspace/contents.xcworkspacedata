@@ -5,6 +5,9 @@
       location = "group:TestPlan.xctestplan">
    </FileRef>
    <FileRef
+      location = "group:CryptoCoin/CryptoCoin.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:NewsApp/NewsApp.xcodeproj">
    </FileRef>
    <FileRef
