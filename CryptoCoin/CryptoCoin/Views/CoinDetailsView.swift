@@ -53,11 +53,15 @@ struct CoinDetailsView: View {
                 Spacer()
             }
         }
-        .onAppear {
-            Task {
-                await viewModel.fetchCoinDetails()
-            }
+        // Added .task modifier - To handle quick navigation between views while preventing unnecessary API calls when quickly navigating back
+        .task {
+            await viewModel.fetchCoinDetails()
         }
+//        .onAppear {
+//            Task {
+//                await viewModel.fetchCoinDetails()
+//            }
+//        }
         .navigationTitle("Coin Details")
     }
 }
