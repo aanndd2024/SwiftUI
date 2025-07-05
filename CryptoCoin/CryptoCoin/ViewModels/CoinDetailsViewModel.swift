@@ -30,7 +30,7 @@ class CoinDetailsViewModel: ObservableObject {
         
         switch result {
         case .success(let coinDetails):
-            print("✅ CoinDetails:", coinDetails)
+            //print("✅ CoinDetails:", coinDetails)
             self.coinsDetails = coinDetails
         case .failure(let error):
             self.errorMessage = error.localizedDescription

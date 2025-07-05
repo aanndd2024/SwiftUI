@@ -27,3 +27,4 @@ struct CoinDetails: Codable {
         let market_cap: [String: Double]
     }
 }
+

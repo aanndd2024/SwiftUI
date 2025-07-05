@@ -38,7 +38,7 @@ struct Endpoint {
 }
 
 protocol NetworkServiceProtocol {
-    func request<T: Decodable>(_ endpoint: Endpoint) async -> Result<T, NetworkError>
+    func request<T: Decodable>(_ type: T.Type, endpoint: Endpoint) async -> Result<T, NetworkError>
 }
 
 class NetworkService: NetworkServiceProtocol {
@@ -50,7 +50,7 @@ class NetworkService: NetworkServiceProtocol {
         self.jsonDecoder = jsonDecoder
     }
     
-    func request<T>(_ endpoint: Endpoint) async -> Result<T, NetworkError> where T : Decodable {
+    func request<T>(_ type: T.Type, endpoint: Endpoint) async -> Result<T, NetworkError> where T : Decodable {
         guard let url = endpoint.url else {
             return .failure(.invalidURL)
         }

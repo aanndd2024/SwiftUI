@@ -30,10 +30,16 @@ class CoinDataService: CoinServiceProtocol {
                 URLQueryItem(name: "per_page", value: "100")
             ]
         )
-        return await networkService.request(endpoint)
+        return await networkService.request([Coin].self, endpoint: endpoint)
     }
     
     func fetchCoinDetails(for coinId: String) async -> Result<CoinDetails, NetworkError> {
+        // ✅ Try to return from cache first
+            if let cached = CoinDetailsCache.shared.get(for: coinId) {
+                print("✅ From Cached \(coinId)")
+                return .success(cached)
+            }
+        
         let endpoint = Endpoint(
             path: "coins/\(coinId)",
             queryItems: [
@@ -46,6 +52,13 @@ class CoinDataService: CoinServiceProtocol {
             ]
         )
         
-        return await networkService.request(endpoint)
+        let result = await networkService.request(CoinDetails.self, endpoint: endpoint)
+        print("✅ From Backend \(coinId)")
+
+        // 💾 Store in cache if success
+        if case .success(let details) = result {
+            CoinDetailsCache.shared.set(details, for: coinId)
+        }
+        return result
     }
 }
