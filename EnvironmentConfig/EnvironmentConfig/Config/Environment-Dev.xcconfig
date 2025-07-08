@@ -1,0 +1,17 @@
+//
+//  Environment-Dev.xcconfig
+//  EnvironmentConfig
+//
+//  Created by Anand Yadav on 08/07/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+
+BASE_API_URL = https://dev.api.example.com
+LOGGING_ENABLED = YES
+API_KEY = dev-1234
+APP_DISPLAY_NAME = MyApp Dev
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev
+
+

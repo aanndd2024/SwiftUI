@@ -1,0 +1,15 @@
+//
+//  Environment-Prod.xcconfig
+//  EnvironmentConfig
+//
+//  Created by Anand Yadav on 08/07/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+
+BASE_API_URL = https://api.example.com
+LOGGING_ENABLED = NO
+API_KEY = prod-1234
+APP_DISPLAY_NAME = MyApp
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIconProd

@@ -1,0 +1,15 @@
+//
+//  Environment-QA.xcconfig
+//  EnvironmentConfig
+//
+//  Created by Anand Yadav on 08/07/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+
+BASE_API_URL = https://qa.api.example.com
+LOGGING_ENABLED = YES
+API_KEY = QA-1234
+APP_DISPLAY_NAME = MyApp qa
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIconQa
